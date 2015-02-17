@@ -1,0 +1,9 @@
+
+
+<% if @email.errors.any? %>
+  $("#contact-form").html("<%= j render partial: 'form' %>");
+<% else %>
+  $("#contact-form").html("Thank yo");
+  // window.location = "/";
+
+<% end %>

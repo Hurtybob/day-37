@@ -1,0 +1,10 @@
+<h1>Maps#show</h1>
+
+<%= form_tag root_path, method: :get, remote: true do %>
+  <%= text_field_tag :search, "", placeholder: "Search and I will pin it" %>
+<% end %>
+
+
+
+
+<div id="map"></div>

@@ -1,0 +1,5 @@
+<% if @result %>
+  L.marker([<%= @result.geometry["location"]["lat"] %>, <%= @result.geometry["location"]["lng"] %>]).addTo(window.map).bindPopup("<%= @result.formatted_address %>");
+
+  window.map.setView([<%= @result.geometry["location"]["lat"] %>, <%= @result.geometry["location"]["lng"] %>]);
+<% end %>
