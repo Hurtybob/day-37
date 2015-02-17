@@ -1,2 +1,36 @@
 <h1>Welcome#dashboard</h1>
 <p>Find me in app/views/welcome/dashboard.html.erb</p>
+
+<div id="movies"></div>
+
+<% @movies.each do |movie| %>
+  <h3><%= movie.title %></h3>
+  <p>Score: <%= movie.ratings.audience_score %> </p>
+<% end %>
+
+<script id="intro-template" type="text/x-handlebars-template">
+  Name: {{ name }}<br/>
+  Food: {{#each food}}
+    <li>{{this}}</li>
+  {{/each}}
+</script>
+
+<script id="movie-template" type="text/x-handlebars-template">
+{{#each this}}
+
+  <div class="media">
+  <div class="media-left">
+    <a href="#">
+      <img class="media-object" src="{{posters.thumbnail}}" alt="...">
+    </a>
+  </div>
+  <div class="media-body">
+    <h4 class="media-heading">{{ title }}</h4>
+    Audience Score: {{ ratings.audience_score}}<br/>
+    Critics Score: {{ ratings.critics_score}}<br/>
+    Differential: {{ ratings.differential }}
+  </div>
+</div>
+
+{{/each}}
+</script>
