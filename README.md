@@ -29,10 +29,10 @@ Homework
 
 *  Make an array of your favorite movies or books or bands. Have at least 4 values.
 *  Make a object of information about yourself. Have at least 4 keys+values
-*  Use .each to loop through the array of objects and log only one property of the hash -- using core JavaScript For example { title: "Gone with the Wind" } loop through and print only the .title
 
 Use Underscore for below
 
+*  Use `_.each` to loop through the array of objects and log only one property of the hash. For example { title: "Gone with the Wind" } loop through and print only the .title
 * Create an array of movies with budgets equal to 55 (where)
 * Create an array of movies that have Leonardo DiCaprio as a star (filter)
 
